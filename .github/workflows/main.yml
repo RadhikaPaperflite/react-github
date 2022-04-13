@@ -26,6 +26,9 @@ jobs:
       # Runs a single command using the runners shell
       - name: install npm
         run: npm install
+      
+      - name: initializer
+        run: gradle init
         
       - name: initialize gradle
         run: ../gradlew build docker -x test
