@@ -26,3 +26,10 @@ jobs:
       # Runs a single command using the runners shell
       - name: install npm
         run: npm install
+        
+      - name: build gradle
+        run: gradle build
+        
+      - name: run gradle
+        run: gradle run
+         
