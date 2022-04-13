@@ -31,7 +31,7 @@ jobs:
         run: gradle init
         
       - name: initialize gradle
-        run: ../gradlew build docker -x test
+        run: ../gradlew build
         
       - name: build gradle
         run: aws ecr get-login --no-include-email --region us-east-1 --profile development | sh
