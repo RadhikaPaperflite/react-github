@@ -27,9 +27,9 @@ jobs:
       - name: install npm
         run: npm install
         
+      - name: initialize gradle
+        run: gradle init
+        
       - name: build gradle
         run: gradle build
-        
-      - name: run gradle
-        run: gradle run
          
